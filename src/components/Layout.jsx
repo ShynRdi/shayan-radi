@@ -2,8 +2,8 @@ import { Outlet, Link } from "react-router-dom";
 
 const Layout = () => {
   return (
-    <>
-      <nav className="">
+    <div className="d-flex">
+      <nav className="navbar">
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -27,7 +27,7 @@ const Layout = () => {
       </nav>
 
       <Outlet />
-    </>
+    </div>
   );
 };
 
